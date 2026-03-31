@@ -1,0 +1,7 @@
+packages:
+  - "."
+
+# pnpm v10 默认不运行依赖的安装脚本，需要显式白名单。
+# Vite/React 构建依赖 esbuild 的 postinstall 来准备二进制。
+onlyBuiltDependencies:
+  - esbuild
